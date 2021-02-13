@@ -6,6 +6,4 @@ import com.udemy.webservices.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-	
-	
 }
