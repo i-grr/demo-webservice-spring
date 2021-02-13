@@ -47,8 +47,8 @@ public class TestConfig implements CommandLineRunner {
 		User user2 = new User(null, "Alex Green", "alex@gmail.com", "999977777", "123456");
 		
 		Order order1 = new Order(null, Instant.parse("2021-02-20T19:52:37Z"), user1, OrderStatus.WAITING_PAYMENT);
-		Order order2 = new Order(null, Instant.parse("2021-03-20T21:33:42Z"), user2, OrderStatus.WAITING_PAYMENT);
-		Order order3 = new Order(null, Instant.parse("2021-04-20T15:07:02Z"), user1, OrderStatus.WAITING_PAYMENT);
+		Order order2 = new Order(null, Instant.parse("2021-03-20T21:33:42Z"), user2, OrderStatus.PAID);
+		Order order3 = new Order(null, Instant.parse("2021-04-20T15:07:02Z"), user1, OrderStatus.DELIVERED);
 		
 		Category category1 = new Category(null, "Eletronics");
 		Category category2 = new Category(null, "Books");
